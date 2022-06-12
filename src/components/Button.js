@@ -15,7 +15,7 @@ function Button() {
       dispatch(setUser(response.data))
     }
     fetchData()
-  }, [])
+  }, [dispatch])
 
   const handleThis = (id) => {
     axios.get(`https://reqres.in/api/users/${id}`).then((res) => {
